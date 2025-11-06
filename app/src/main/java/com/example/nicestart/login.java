@@ -35,7 +35,7 @@ public class login extends AppCompatActivity {
     }
 
     public void closeSignup(View v) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, login.class);
         startActivity(intent);
     }
 }
