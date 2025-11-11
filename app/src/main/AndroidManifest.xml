@@ -13,9 +13,12 @@
         android:theme="@style/Theme.Nicestart">
         <activity
             android:name=".signup"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.Nicestart.ActionBar.Transparent"
+            android:parentActivityName=".login"/>
         <activity
             android:name=".login"
+            android:theme="@style/Base.Theme.Nicestart.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
