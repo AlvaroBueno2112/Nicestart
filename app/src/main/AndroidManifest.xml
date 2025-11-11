@@ -12,14 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nicestart">
         <activity
-            android:name=".signup"
+            android:name=".splash"
             android:exported="true"
-            android:theme="@style/Theme.Nicestart.ActionBar.Transparent"
-            android:parentActivityName=".login"/>
-        <activity
-            android:name=".login"
-            android:theme="@style/Base.Theme.Nicestart.NoActionBar"
-            android:exported="true">
+            android:theme="@style/Base.Theme.Nicestart.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,8 +22,22 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".signup"
+            android:exported="true"
+            android:parentActivityName=".login"
+            android:theme="@style/Theme.Nicestart.ActionBar.Transparent" />
+        <activity
+            android:name=".login"
+            android:exported="true"
+            android:theme="@style/Base.Theme.Nicestart.NoActionBar">
+        </activity>
+        <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
