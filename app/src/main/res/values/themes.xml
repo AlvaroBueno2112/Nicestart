@@ -5,7 +5,7 @@
     </style>
 
     <style name="Theme.Nicestart.ActionBar.Transparent" parent="Base.Theme.Nicestart">
-        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
         <item name="actionBarStyle">@style/TransparentActionBar</item>
 
     </style>
@@ -14,6 +14,21 @@
         <item name="background">"@android:color/transparent"</item>
         <item name="android:elevation">0dp</item>
         <item name="displayOptions">showHome</item>
+
+    </style>
+
+
+    <style name="Theme.Profile" parent="Base.Theme.Nicestart">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="actionBarStyle">@style/TransparentActionBarProfile</item>
+
+    </style>
+
+    <style name="TransparentActionBarProfile" parent="Widget.AppCompat.ActionBar">
+        <item name="background">"@android:color/transparent"</item>
+        <item name="android:elevation">0dp</item>
+        <item name="displayOptions">showTitle</item>
+
     </style>
 
 
