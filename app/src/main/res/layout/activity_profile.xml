@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/texto1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="18 años, estudiante de DAM."
+        android:text="18 años, estudiante de DAM2."
         android:textColor="@color/black"
         android:textSize="15sp"/>
 

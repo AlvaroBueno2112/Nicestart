@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -23,6 +25,11 @@ public class splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
+
+        ImageView mLogo = findViewById(R.id.logosplash);
+
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.blink);
+        mLogo.startAnimation(animation);
 
         openApp();
 

@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
-        android:id="@+id/imagen1"
+        android:id="@+id/logosplash"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="250dp"
@@ -34,7 +34,7 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imagen1" />
+        app:layout_constraintTop_toBottomOf="@id/logosplash" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
