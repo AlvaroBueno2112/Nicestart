@@ -1,14 +1,22 @@
 package com.example.nicestart;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 public class splash extends AppCompatActivity {
 
@@ -18,13 +26,27 @@ public class splash extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
 
+        ImageView mLogo = findViewById(R.id.logosplash);
+
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.blink);
+        mLogo.startAnimation(animation);
+
         openApp();
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        ImageView mSea = findViewById(R.id.backView);
+
+        Glide.with(this)
+                .load(R.drawable.oceano)
+                .transition(DrawableTransitionOptions.withCrossFade(100))
+                .centerCrop()
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.white)))
+//                .circleCrop()
+                .into(mSea);
+
+
+
     }
 
     private void openApp(){
