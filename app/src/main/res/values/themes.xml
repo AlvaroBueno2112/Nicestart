@@ -35,7 +35,9 @@
     <style name="Base.Theme.Nicestart.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar"/>
 
 
-    <style name="Theme.Nicestart" parent="Base.Theme.Nicestart" />
+    <style name="Theme.Nicestart" parent="Base.Theme.Nicestart">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
 
 
 </resources>
