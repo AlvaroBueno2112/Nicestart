@@ -8,9 +8,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_logonicestart"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_logonicestart_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Nicestart">
         <activity
@@ -43,6 +43,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
+            android:theme="@style/Base.Theme.Main"
             />
 
         <meta-data

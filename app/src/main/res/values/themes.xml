@@ -1,38 +1,50 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Base.Theme.Nicestart" parent="Theme.Material3.DayNight">
+    <style name="Base.Theme.Nicestart" parent="Theme.Material3.DayNight"/>
 
-    </style>
+    <style name="Base.Theme.Nicestart.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar"/>
 
     <style name="Theme.Nicestart.ActionBar.Transparent" parent="Base.Theme.Nicestart">
         <item name="android:textColorPrimary">@color/black</item>
         <item name="actionBarStyle">@style/TransparentActionBar</item>
-
     </style>
 
     <style name="TransparentActionBar" parent="Widget.AppCompat.ActionBar">
         <item name="background">"@android:color/transparent"</item>
         <item name="android:elevation">0dp</item>
         <item name="displayOptions">showHome</item>
-
     </style>
+
+
 
 
     <style name="Theme.Profile" parent="Base.Theme.Nicestart">
         <item name="android:textColorPrimary">@color/black</item>
         <item name="actionBarStyle">@style/TransparentActionBarProfile</item>
-
     </style>
 
     <style name="TransparentActionBarProfile" parent="Widget.AppCompat.ActionBar">
         <item name="background">"@android:color/transparent"</item>
         <item name="android:elevation">0dp</item>
         <item name="displayOptions">showTitle</item>
-
     </style>
 
 
-    <style name="Base.Theme.Nicestart.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar"/>
+
+
+    <style name="Base.Theme.Main" parent="Base.Theme.Nicestart">
+        <item name="actionBarStyle">@style/TransparentActionBarMain</item>
+    </style>
+
+    <style name="TransparentActionBarMain" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@color/appbar_semitransparente</item>
+        <item name="android:elevation">0dp</item>
+        <item name="titleTextStyle">@style/ActionBarTitleStyle</item>
+    </style>
+
+    <style name="ActionBarTitleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black</item>
+    </style>
 
 
     <style name="Theme.Nicestart" parent="Base.Theme.Nicestart">

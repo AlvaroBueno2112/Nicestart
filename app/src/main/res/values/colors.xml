@@ -7,4 +7,6 @@
     <color name="color3">#2A5159</color>
     <color name="color4">#327355</color>
     <color name="color5">#5C8C46</color>
+    <color name="rojo">#FF0000</color>
+    <color name="appbar_semitransparente">#55FFFFFF</color>
 </resources>
