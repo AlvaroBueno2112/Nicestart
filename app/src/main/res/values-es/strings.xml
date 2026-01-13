@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nicestart</string>
+    <string name="signup">Registro</string>
+    <string name="login">Entrar</string>
+</resources>
