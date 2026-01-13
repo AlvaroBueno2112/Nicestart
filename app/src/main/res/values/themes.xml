@@ -33,17 +33,18 @@
 
 
     <style name="Base.Theme.Main" parent="Base.Theme.Nicestart">
-        <item name="actionBarStyle">@style/TransparentActionBarMain</item>
+        <item name="colorPrimary">@color/color1</item>
+        <item name="android:elevation">0dp</item>
     </style>
 
     <style name="TransparentActionBarMain" parent="Widget.AppCompat.ActionBar">
-        <item name="background">@color/appbar_semitransparente</item>
-        <item name="android:elevation">0dp</item>
-        <item name="titleTextStyle">@style/ActionBarTitleStyle</item>
+
+
     </style>
 
     <style name="ActionBarTitleStyle" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/black</item>
+
     </style>
 
 

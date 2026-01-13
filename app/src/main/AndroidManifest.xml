@@ -39,7 +39,8 @@
         <activity
             android:name=".login"
             android:exported="true"
-            android:theme="@style/Base.Theme.Nicestart.NoActionBar"></activity>
+            android:theme="@style/Base.Theme.Nicestart.NoActionBar"
+            />
         <activity
             android:name=".MainActivity"
             android:exported="true"
