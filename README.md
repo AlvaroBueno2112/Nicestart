@@ -45,3 +45,8 @@
         - Permite mostrar contenido web embebido dentro de la app
 
 ---
+
+### 🧭 5. Pantalla Base de Navegación (Scaffold + AppBar + BottomBar + FAB)
+<p align="center">
+  <img src="img/activity_menuapp.png.png" alt="Pantalla Base con navegación completa" width="600">
+</p>

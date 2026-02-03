@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+~ Copyright (C) 2019 The Android Open Source Project
+~
+~ Licensed under the Apache License, Version 2.0 (the "License");
+~ you may not use this file except in compliance with the License.
+~ You may obtain a copy of the License at
+~
+~      http://www.apache.org/licenses/LICENSE-2.0
+~
+~ Unless required by applicable law or agreed to in writing, software
+~ distributed under the License is distributed on an "AS IS" BASIS,
+~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~ See the License for the specific language governing permissions and
+~ limitations under the License.
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <androidx.core.widget.NestedScrollView
+     android:id="@+id/scroll"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:fillViewport="true"
+     >
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginStart="8dp"
+         android:layout_marginTop="48dp"
+         android:layout_marginEnd="8dp"
+         android:padding="10dp"
+         android:text="orem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque magna id ipsum vulputate, ut luctus orci placerat. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur finibus semper turpis sed commodo. Sed sit amet pulvinar quam. Maecenas laoreet, tellus in pretium blandit, lorem lectus tempus elit, sed facilisis quam quam vel enim. Mauris pellentesque pulvinar pretium.
+
+Quisque ullamcorper nisi volutpat velit fermentum congue. Nulla sit amet neque sed nisl ornare ultrices. Suspendisse nec quam eros. Nam convallis sem feugiat magna efficitur laoreet. Morbi pellentesque nec urna sit amet eleifend. Duis a ligula sed justo malesuada pulvinar at nec ex. Vestibulum viverra nulla felis. Duis aliquet, ligula ut vestibulum posuere, orci orci dapibus magna, ut suscipit est orci et magna.
+
+Nulla iaculis, ex sed feugiat ultricies, lorem ligula aliquam quam, in pulvinar dui sapien in mauris. Pellentesque auctor, metus sed sollicitudin auctor, ante purus consectetur purus, a placerat mauris nisi sit amet turpis. Mauris a accumsan lorem, vel sagittis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur sed congue leo. Nullam sed orci eget justo fringilla lacinia vitae convallis ex. Pellentesque sit amet purus pretium, egestas purus in, condimentum quam. Nulla magna nulla, viverra gravida dapibus quis, tempor ac ante. Praesent non diam at augue sollicitudin tincidunt lacinia vitae enim. Nunc molestie metus eu pharetra auctor. Etiam porttitor tempus lacus, pretium euismod mauris consequat ac. Etiam ut orci pharetra, faucibus tellus id, ultricies ante. Aenean scelerisque, justo a eleifend feugiat, ipsum enim tincidunt massa, at tristique felis lorem ut nibh. Integer cursus fringilla bibendum.
+
+Aenean at condimentum magna. Phasellus fermentum dui sit amet justo ultricies, eget tempor justo tempor. Aliquam fermentum ante id arcu sodales, vel interdum ipsum posuere. Sed at tincidunt quam, ac aliquet massa. Aliquam ornare sit amet neque sit amet maximus. Maecenas interdum ex sodales tempor eleifend. Fusce congue non ligula vel ullamcorper. Mauris at finibus tellus. Donec dictum erat quis risus pulvinar, a aliquam leo dapibus.
+
+Proin consectetur maximus diam, non aliquet nisl varius at. Phasellus faucibus diam eu diam vestibulum pellentesque. Sed fringilla mi vitae arcu pulvinar, blandit tempus nisi hendrerit. Praesent mattis lorem vitae arcu imperdiet, vitae aliquam metus congue. Vivamus dignissim dui eu neque dictum venenatis. Praesent at augue sed purus pharetra venenatis vel vitae felis. Morbi vulputate condimentum lorem ut tempor. Aenean id sollicitudin lorem."
+         android:textColor="@color/black"
+         android:textSize="20sp"/>
+
+ </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:fabAlignmentMode="center"
+            app:menu="@menu/bottom_app_bar_menu"
+            app:navigationIcon="@drawable/outline_key_24"
+            />
+
+        <!--            style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"-->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/color1"
+            android:src="@drawable/ico_plus"
+            app:fabSize="normal"
+            app:layout_anchor="@+id/bottom_app_bar"
+            app:tint="@android:color/white" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

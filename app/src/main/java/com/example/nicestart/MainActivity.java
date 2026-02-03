@@ -72,9 +72,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        builder.setNegativeButton("Nada", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Navegar", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(MainActivity.this, menu_appbar.class);
+                startActivity(intent);
             }
         });
 
